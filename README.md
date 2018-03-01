@@ -14,7 +14,6 @@ npm i create-immutable-selector
 import createImmutableSelector from "create-immutable-selector";
 
 const shopItemsSelector = state => state.getIn(["shop", "items"]);
-const taxPercentSelector = state => state.getIn(["shop", "taxPercent"]);
 
 const subtotalSelector = createImmutableSelector(shopItemsSelector, items =>
   items.reduce((acc, item) => acc + item.value, 0)
