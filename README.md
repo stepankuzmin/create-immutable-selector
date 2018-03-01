@@ -1,6 +1,6 @@
 # create-immutable-selector
 
-`createImmutableSelector` is a customized version of `reselect` [createSelector](https://github.com/reactjs/reselect#createselectorinputselectors--inputselectors-resultfunc). It uses [Immutable.is](http://facebook.github.io/immutable-js/docs/#/is) for equality check with `defaultMemoize`.
+`createImmutableSelector` is a customized version of reselect's [createSelector](https://github.com/reactjs/reselect#createselectorinputselectors--inputselectors-resultfunc) with [Immutable.is](http://facebook.github.io/immutable-js/docs/#/is) as equality check.
 
 ```js
 import createImmutableSelector from "create-immutable-selector";
