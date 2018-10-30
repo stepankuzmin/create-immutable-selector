@@ -19,7 +19,6 @@
     "lint": "eslint index.js",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged",
     "cz": "git-cz",
     "release": "standard-version",
     "prepublishOnly": "npm run build"
@@ -57,5 +56,10 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "standard-version": "^4.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
